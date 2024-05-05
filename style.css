@@ -1,0 +1,213 @@
+/* Define CSS variables */
+:root {
+    --primary-color: #660708;
+    --background-color: #0b090a;
+    --header-color:#161a1d;
+    --text-color: #f5f3f4;
+    --link-color: #b1a7a6;
+    --hover-color:#e5383b;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+    
+}
+
+
+.container-fluid img{
+    width: 50px;
+    
+}
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    
+}
+.carouselExampleControls{
+    z-index: -1;
+}
+.carousel img #hi{
+    width: 150%;
+    height: 100%;
+}
+
+.search input{
+    position:absolute;
+    z-index: 1000; 
+    top: 50%;
+    left: 40%;
+    width: 45%;
+    display: flex;
+    padding: 10px; /* Optional: Add some padding */
+    z-index: 1000; /* Adjust the z-index to ensure the form appears above other content */
+}
+/* Additional CSS styles for the search form */
+
+
+.hero-section .search input{
+    width: 30vw;
+}
+.search button{
+    border:var(--primary-color);
+    color:var(--text-color);
+    background-color: var(--hover-color);
+}
+.search button:hover{
+        background-color: #70181a;
+}
+#anime{
+    margin-top:10px ;
+    text-align: center;
+    margin-bottom: -5em;
+}
+#anime h1{
+font-weight: 800;
+color: var(--hover-color);
+margin-bottom: 2.5em;
+}
+.container button{
+    width: 20px;
+}
+#anime {
+    margin-top: 250px;
+    text-align: center;
+  }
+  
+  #anime h1 {
+    font-weight: 800;
+    color: var(--hover-color);
+    margin-bottom: 2.5em;
+  }
+  
+  .card{
+    margin-bottom:1em ;
+    color: white;
+    background-color: #0b090a;
+  }
+  .news{
+    margin-top: 10em ;
+    margin-bottom: 3em;
+    color: white;
+    background-color: #0b090a;
+    text-align: center;
+    line-height: 3em;
+  }
+  .news button{
+    width: 200px;
+    padding: 0.2em;
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    border: var(--primary-color);
+    border-radius: 8px;
+  }
+  footer{
+    color:grey;
+    margin-left: 3em;
+    margin-bottom: 2em;
+    
+  }
+  footer .row{
+  align-items: center;
+  color: grey;
+  text-align: center;
+  
+  }
+  footer h3,li{
+    list-style: none;
+    margin-bottom: 2em;
+  }
+  footer h4{
+    margin-bottom:1.5em ;
+  }
+  footer img{
+    width: 60px;
+    padding: 1em;
+  }
+
+
+.search input[type="search"] {
+    width: 100%;
+    max-width: 300px; /* Limit the width on larger screens */
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+/* Media queries for responsive design */
+@media (min-width: 576px) {
+    /* Adjust search form styles for small devices */
+    .search {
+        margin-bottom: 3em;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Adjust search form styles for medium devices */
+    .search {
+        margin-bottom: 4em;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Adjust search form styles for large devices */
+    .search {
+        margin-bottom: 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Adjust search form styles for extra large devices */
+    .search {
+        margin-bottom: 6em;
+    }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 576px) {
+    /* Adjust search form styles for small devices */
+    .search {
+        display: none; /* Hide the search input on small screens */
+    }
+    #anime{
+        display:flex;
+        justify-content:center;
+        margin-bottom: -15em;
+        margin-top:1.9em ;
+        
+    }
+    .col{
+        margin-left:1.5em;
+        
+        
+    }
+    .navbar{
+        width:106%;
+        text-align:center;
+    }
+    footer{
+        margin-top:6em;
+        margin-left:0%;
+        text-align:center;
+    }
+    footer .col{
+        margin-left:0;
+        
+    }
+    .container h2{
+        margin-top: 12em;
+    }
+    footer ul{
+        margin-left:0%;
+        padding-left:0px;
+        text-align:center;
+       
+    }
+}
